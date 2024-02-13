@@ -1,0 +1,39 @@
+version: "3.8"
+
+services:
+  pgdatabase:
+    image: postgres:16
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=root
+      - POSTGRES_DB=ny_taxi_records
+    volumes:
+      - "./final:/var/lib/postgresql/data:rw"
+    ports:
+      - "5431:5432"
+
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=admin@admin.com
+      - PGADMIN_DEFAULT_PASSWORD=root
+    volumes:
+      - "./pgadmin_data:/var/lib/pgadmin"
+    ports:
+      - "8080:80"
+
+  ingestion-service:
+    build:
+      context: .
+    depends_on:
+      - pgdatabase
+    command: >
+      python ingest_data.py
+      --user root
+      --password root
+      --host pgdatabase
+      --port 5432
+      --db ny_taxi_records
+      --table_trips yellow_taxi_tripdata
+      --table_zones taxi_zone
+      --urls "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-11.parquet,https://d37ci6vzurychx.cloudfront.net/misc/taxi+_zone_lookup.csv"
