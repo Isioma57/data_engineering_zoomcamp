@@ -37,3 +37,5 @@ For the course you'll need:
 [PostgreSQL with Docker: From Setup to Data Ingestion and pgAdmin Integration](https://blog.devops.dev/postgresql-with-docker-from-setup-to-data-ingestion-and-pgadmin-integration-929c966cc650)
 
 [Practical Steps to Streamline PostgreSQL and pgAdmin Deployment with Docker Compose](https://blog.devops.dev/practical-steps-to-streamline-postgresql-and-pgadmin-deployment-with-docker-compose-6ac74a0808df)
+
+[Terraform](https://github.com/Isioma57/data_engineering_zoomcamp/blob/main/modules/1.%20Intro_%26_Prerequisites/Terraform/README.md)
