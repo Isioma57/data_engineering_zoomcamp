@@ -39,3 +39,27 @@ For the course you'll need:
 [Practical Steps to Streamline PostgreSQL and pgAdmin Deployment with Docker Compose](https://blog.devops.dev/practical-steps-to-streamline-postgresql-and-pgadmin-deployment-with-docker-compose-6ac74a0808df)
 
 [Terraform](https://github.com/Isioma57/data_engineering_zoomcamp/blob/main/modules/1.%20Intro_%26_Prerequisites/Terraform/README.md)
+
+
+### 2. WorkFlow Orchestration
+
+This section covers workflow orchestration with mage. Mage is an open-source, hybrid framework for transforming and integrating data.
+
+#### 📺 Videos
+
+
+* [2.2.1 - Intro to Orchestration](#221----intro-to-orchestration)
+* [2.2.2 - Intro to Mage](#222---%EF%B8%8F-intro-to-mage)
+* [2.2.3 - ETL: API to Postgres](#223----etl-api-to-postgres)
+* [2.2.4 - ETL: API to GCS](#224----etl-api-to-gcs)
+* [2.2.5 - ETL: GCS to BigQuery](#225----etl-gcs-to-bigquery)
+* [2.2.6 - 👨Parameterized Execution](#226----parameterized-execution)
+* [2.2.7 - Deployment (Optional)](#227----deployment-optional)
+* [2.2.8 - Homework](#228---️-homework)
+
+#### 📗Resources
+
+- [Slides](https://docs.google.com/presentation/d/1yN-e22VNwezmPfKrZkgXQVrX5owDb285I2HxHWgmAEQ/edit#slide=id.g262fb0d2905_0_12)
+- [Mage Docs](https://docs.mage.ai/)
+- [Mage Guides](https://docs.mage.ai/guides)
+- [Mage Slack](https://www.mage.ai/chat)

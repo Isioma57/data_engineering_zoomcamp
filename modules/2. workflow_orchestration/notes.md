@@ -1,8 +1,4 @@
-<div align="center">
-    
 # Workflow Orchestration with Mage
-
-<hr />
 
 ## What is orchestration?
 
